@@ -1,21 +1,18 @@
 # Digital Forensics Expert System
-**EAS 510: Basics of AI - Assignment 1**
 
----
-
-## 📋 Project Overview
+## Project Overview
 
 This project implements a **digital forensics expert system** designed to match modified images back to their originals using a three-rule evidence-based approach. The system serves as a simplified version of real forensic image analysis tools, demonstrating classical AI expert system principles applied to digital evidence authentication.
 
-### 🎯 Objectives
+### Objectives
 - Build a rule-based expert system for image similarity detection
 - Achieve ≥60% accuracy on modified images
 - Maintain low false positive rates on random images
-- Provide transparent, explainable decision-making process
+- Provide a transparent, explainable decision-making process
 
 ---
 
-## 🏗️ System Architecture
+## System Architecture
 
 The expert system implements a **three-tier analysis framework**:
 
@@ -32,7 +29,7 @@ Input Image → SimpleDetective → Rule Engine → Decision (Match/Reject)
 
 ---
 
-## 📚 Required Libraries and Dependencies
+## Required Libraries and Dependencies
 
 ### Core Dependencies
 ```bash
@@ -48,7 +45,7 @@ pip install pillow imagehash opencv-python numpy
 
 ---
 
-## 🔍 Three-Rule Analysis System
+## Three-Rule Analysis System
 
 ### Rule 1: Metadata Analysis (0-30 points)
 **Purpose**: Compare file properties and technical metadata
@@ -122,13 +119,13 @@ similarity = max(0, (64 - hamming_distance) / 64 * 100)
 
 ---
 
-## 🚀 Setup and Installation
+## Setup and Installation
 
 ### Step 1: Environment Setup
 ```bash
 # Create virtual environment (recommended)
-python -m venv forensics_env
-source forensics_env/bin/activate  # On Windows: forensics_env\Scripts\activate
+python -m venv myenv
+source myenv/bin/activate  # On Windows: myenv\Scripts\activate
 
 # Install dependencies
 pip install pillow imagehash opencv-python numpy
@@ -151,22 +148,12 @@ Download the official dataset:
 ```bash
 git clone https://github.com/delveccj/EAS510_Assignment1.git
 ```
-
 ---
 
-## 🏃‍♂️ How to Run the Project
+## How to Run the Project
 
 ### Basic Execution
 ```bash
-python test_system.py
-```
-
-### Advanced Testing with Dataset Verification
-```bash
-# First, check dataset structure (if using the bonus checker)
-python check_dataset.py
-
-# Run the full forensic analysis
 python test_system.py
 ```
 
@@ -178,10 +165,9 @@ Rule 2 (Image Hash): FIRED - EXCELLENT_MATCH - Best: 100.0% → 10/10 points
 Rule 3 (Template): FIRED - EXCELLENT_MATCH, Correlation: 0.990 → 59/60 points
 Final Score: 94/100 → MATCH to original_00.jpg
 ```
-
 ---
 
-## 📊 Performance Analysis & Results
+## Performance Analysis & Results
 
 ### System Performance Metrics
 Based on test results from `results.txt`:
@@ -234,7 +220,7 @@ Based on test results from `results.txt`:
 
 ---
 
-## 🔬 Technical Deep Dive
+## Technical Deep Dive
 
 ### Expert System Decision Logic
 The system uses **linear score aggregation** with a fixed threshold:
@@ -257,7 +243,7 @@ decision = "MATCH" if total_score >= 60 else "REJECTED"
 
 ---
 
-## 🛠️ Code Structure and Files
+## Code Structure and Files
 
 ### Core Files Description
 
@@ -281,25 +267,7 @@ decision = "MATCH" if total_score >= 60 else "REJECTED"
 
 ---
 
-## 🎯 Assignment Requirements Compliance
-
-### ✅ Core Requirements Met
-- **Three Rule Implementation**: Metadata, Image Hashing, Template Matching
-- **Scoring System**: 30/10/60 points allocation  
-- **Decision Threshold**: 60+ points for match determination
-- **Evidence Transparency**: Detailed rule reasoning displayed
-- **Accuracy Target**: >60% accuracy on modified images (achieved 100%)
-- **False Positive Control**: Low false positive rate on random images (achieved 0%)
-
-### ✅ Technical Specifications
-- **Python Implementation**: Standalone scripts runnable locally
-- **Library Usage**: PIL, imagehash, OpenCV as specified
-- **Expert System Architecture**: Rule-based reasoning with evidence combination
-- **Output Format**: Matches required command-line display format
-
----
-
-## 🚨 Common Issues and Troubleshooting
+## Common Issues and Troubleshooting
 
 ### Dataset Issues
 ```bash
@@ -322,7 +290,7 @@ ModuleNotFoundError: No module named 'imagehash'
 
 ---
 
-## 📈 Future Improvements
+## Future Improvements
 
 ### Potential Enhancements
 1. **Machine Learning Integration**: Combine expert rules with ML confidence scoring
@@ -340,7 +308,7 @@ ModuleNotFoundError: No module named 'imagehash'
 
 ---
 
-## 📚 References and Further Reading
+## References and Further Reading
 
 ### Academic Sources
 - Digital Image Forensics: A Survey of Recent Techniques
@@ -355,7 +323,7 @@ ModuleNotFoundError: No module named 'imagehash'
 
 ---
 
-## 👨‍💻 Author & Course Information
+## Author & Course Information
 
 - **Course**: EAS 510 - Basics of AI  
 - **Assignment**: Assignment 1 - Digital Forensics Apprentice
