@@ -1,0 +1,429 @@
+Windows PowerShell
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Install the latest PowerShell for new features and improvements! https://aka.ms/PSWindows
+
+PS C:\Users\Jeet Kavaiya\OneDrive\Desktop\Fall_25\Basics of AI\Expert_System_Project> code .
+PS C:\Users\Jeet Kavaiya\OneDrive\Desktop\Fall_25\Basics of AI\Expert_System_Project> myenv\Scripts\activate
+(myenv) PS C:\Users\Jeet Kavaiya\OneDrive\Desktop\Fall_25\Basics of AI\Expert_System_Project> python test_system.py
+[INFO] Registering targets from folder: originals
+[INFO] Registered original_00.jpg
+[INFO] Registered original_01.jpg
+[INFO] Registered original_02.jpg
+[INFO] Registered original_03.jpg
+[INFO] Registered original_04.jpg
+[INFO] Registered original_05.jpg
+[INFO] Registered original_06.jpg
+[INFO] Registered original_07.jpg
+[INFO] Registered original_08.jpg
+[INFO] Registered original_09.jpg
+[INFO] Successfully registered 10 target images
+
+============================================================
+Processing folder: modified_images
+============================================================
+
+Processing: modified_00_bright_enhanced.jpg
+Rule 1 (Metadata): FIRED - METADATA_SIMILAR, Size ratio 0.97, Dimension similarity 1.00 -> 25/30 points
+Rule 2 (Image Hash): FIRED - EXCELLENT_MATCH - Best: 100.0%, phash: 96.9% (distance: 2), ahash: 100.0% (distance: 0), dhash: 95.3% (distance: 3), whash: 100.0% (distance: 0) -> 10/10 points
+Rule 3 (Template): FIRED - EXCELLENT_MATCH, Input-in-Original: 0.990, Original-in-Input: 0.990 -> 59/60 points
+Final Score: 94/100 -> MATCH to original_00.jpg
+
+Processing: modified_00_compressed.jpg
+Rule 1 (Metadata): FIRED - METADATA_PARTIAL, Low size ratio 0.34, Dimension similarity 1.00 -> 13/30 points
+Rule 2 (Image Hash): FIRED - EXCELLENT_MATCH - Best: 100.0%, phash: 100.0% (distance: 0), ahash: 100.0% (distance: 0), dhash: 100.0% (distance: 0), whash: 100.0% (distance: 0) -> 10/10 points
+Rule 3 (Template): FIRED - EXCELLENT_MATCH, Input-in-Original: 0.996, Original-in-Input: 0.996 -> 59/60 points
+Final Score: 82/100 -> MATCH to original_00.jpg
+
+Processing: modified_00_crop_25pct.jpg
+Rule 1 (Metadata): NO MATCH - METADATA_DIFFERENT -> 0/30 points
+Rule 2 (Image Hash): FIRED - WEAK_MATCH - Best: 51.6%, phash: 46.9% (distance: 34), ahash: 39.1% (distance: 39), dhash: 51.6% (distance: 31), whash: 43.8% (distance: 36) -> 4/10 points
+Rule 3 (Template): FIRED - EXCELLENT_MATCH, Input-in-Original: 0.999, Scale 0.5: 0.415, Scale 0.75: 0.367, Scale 1.25: 0.376, Scale 1.5: 0.346 -> 59/60 points
+Final Score: 63/100 -> MATCH to original_00.jpg
+
+Processing: modified_00_crop_50pct.jpg
+Rule 1 (Metadata): FIRED - METADATA_PARTIAL, Dimension similarity 0.25 -> 1/30 points
+Rule 2 (Image Hash): FIRED - WEAK_MATCH - Best: 59.4%, phash: 53.1% (distance: 30), ahash: 57.8% (distance: 27), dhash: 57.8% (distance: 27), whash: 59.4% (distance: 26) -> 4/10 points
+Rule 3 (Template): FIRED - EXCELLENT_MATCH, Input-in-Original: 0.999, Scale 0.5: 0.246, Scale 0.75: 0.395, Scale 1.25: 0.467, Scale 1.5: 0.386 -> 59/60 points
+Final Score: 64/100 -> MATCH to original_00.jpg
+
+Processing: modified_00_crop_75pct.jpg
+Rule 1 (Metadata): FIRED - METADATA_PARTIAL, Moderate size ratio 0.64, Dimension similarity 0.56 -> 17/30 points
+Rule 2 (Image Hash): FIRED - MODERATE_MATCH - Best: 79.7%, phash: 68.8% (distance: 20), ahash: 79.7% (distance: 13), dhash: 57.8% (distance: 27), whash: 78.1% (distance: 14) -> 6/10 points
+Rule 3 (Template): FIRED - EXCELLENT_MATCH, Input-in-Original: 0.999, Scale 0.5: 0.230, Scale 0.75: 0.424, Scale 1.25: 0.420 -> 59/60 points
+Final Score: 82/100 -> MATCH to original_00.jpg
+
+Processing: modified_00_format_png.png
+Rule 1 (Metadata): FIRED - METADATA_PARTIAL, Dimension similarity 1.00 -> 5/30 points
+Rule 2 (Image Hash): FIRED - EXCELLENT_MATCH - Best: 100.0%, phash: 100.0% (distance: 0), ahash: 100.0% (distance: 0), dhash: 100.0% (distance: 0), whash: 100.0% (distance: 0) -> 10/10 points
+Rule 3 (Template): FIRED - EXCELLENT_MATCH, Input-in-Original: 1.000, Original-in-Input: 1.000 -> 60/60 points
+Final Score: 75/100 -> MATCH to original_00.jpg
+
+Processing: modified_01_bright_enhanced.jpg
+Rule 1 (Metadata): FIRED - METADATA_SIMILAR, Size ratio 0.96, Dimension similarity 1.00 -> 25/30 points
+Rule 2 (Image Hash): FIRED - EXCELLENT_MATCH - Best: 100.0%, phash: 100.0% (distance: 0), ahash: 100.0% (distance: 0), dhash: 95.3% (distance: 3), whash: 100.0% (distance: 0) -> 10/10 points
+Rule 3 (Template): FIRED - EXCELLENT_MATCH, Input-in-Original: 0.998, Original-in-Input: 0.998 -> 59/60 points
+Final Score: 94/100 -> MATCH to original_01.jpg
+
+Processing: modified_01_compressed.jpg
+Rule 1 (Metadata): FIRED - METADATA_PARTIAL, Low size ratio 0.36, Dimension similarity 1.00 -> 13/30 points
+Rule 2 (Image Hash): FIRED - EXCELLENT_MATCH - Best: 100.0%, phash: 100.0% (distance: 0), ahash: 100.0% (distance: 0), dhash: 100.0% (distance: 0), whash: 100.0% (distance: 0) -> 10/10 points
+Rule 3 (Template): FIRED - EXCELLENT_MATCH, Input-in-Original: 0.998, Original-in-Input: 0.998 -> 59/60 points
+Final Score: 82/100 -> MATCH to original_01.jpg
+
+Processing: modified_01_crop_25pct.jpg
+Rule 1 (Metadata): NO MATCH - METADATA_DIFFERENT -> 0/30 points
+Rule 2 (Image Hash): FIRED - WEAK_MATCH - Best: 53.1%, phash: 50.0% (distance: 32), ahash: 42.2% (distance: 37), dhash: 51.6% (distance: 31), whash: 53.1% (distance: 30) -> 4/10 points
+Rule 3 (Template): FIRED - EXCELLENT_MATCH, Input-in-Original: 0.999, Scale 0.5: 0.305, Scale 0.75: 0.392, Scale 1.25: 0.362, Scale 1.5: 0.303 -> 59/60 points
+Final Score: 63/100 -> MATCH to original_01.jpg
+
+Processing: modified_01_crop_50pct.jpg
+Rule 1 (Metadata): FIRED - METADATA_PARTIAL, Low size ratio 0.35, Dimension similarity 0.25 -> 9/30 points
+Rule 2 (Image Hash): FIRED - WEAK_MATCH - Best: 59.4%, phash: 50.0% (distance: 32), ahash: 57.8% (distance: 27), dhash: 39.1% (distance: 39), whash: 59.4% (distance: 26) -> 4/10 points
+Rule 3 (Template): FIRED - EXCELLENT_MATCH, Input-in-Original: 1.000, Scale 0.5: 0.338, Scale 0.75: 0.444, Scale 1.25: 0.363, Scale 1.5: 0.239 -> 59/60 points
+Final Score: 72/100 -> MATCH to original_01.jpg
+
+Processing: modified_01_crop_75pct.jpg
+Rule 1 (Metadata): FIRED - METADATA_PARTIAL, Moderate size ratio 0.72, Dimension similarity 0.56 -> 17/30 points
+Rule 2 (Image Hash): FIRED - GOOD_MATCH - Best: 84.4%, phash: 62.5% (distance: 24), ahash: 84.4% (distance: 10), dhash: 57.8% (distance: 27), whash: 84.4% (distance: 10) -> 8/10 points
+Rule 3 (Template): FIRED - EXCELLENT_MATCH, Input-in-Original: 0.999, Scale 0.5: 0.246, Scale 0.75: 0.327, Scale 1.25: 0.354 -> 59/60 points
+Final Score: 84/100 -> MATCH to original_01.jpg
+
+Processing: modified_01_format_png.png
+Rule 1 (Metadata): FIRED - METADATA_PARTIAL, Dimension similarity 1.00 -> 5/30 points
+Rule 2 (Image Hash): FIRED - EXCELLENT_MATCH - Best: 100.0%, phash: 100.0% (distance: 0), ahash: 100.0% (distance: 0), dhash: 100.0% (distance: 0), whash: 100.0% (distance: 0) -> 10/10 points
+Rule 3 (Template): FIRED - EXCELLENT_MATCH, Input-in-Original: 1.000, Original-in-Input: 1.000 -> 59/60 points
+Final Score: 74/100 -> MATCH to original_01.jpg
+
+Processing: modified_02_bright_enhanced.jpg
+Rule 1 (Metadata): FIRED - METADATA_SIMILAR, Size ratio 0.99, Dimension similarity 1.00 -> 25/30 points
+Rule 2 (Image Hash): FIRED - EXCELLENT_MATCH - Best: 100.0%, phash: 100.0% (distance: 0), ahash: 96.9% (distance: 2), dhash: 90.6% (distance: 6), whash: 100.0% (distance: 0) -> 10/10 points
+Rule 3 (Template): FIRED - EXCELLENT_MATCH, Input-in-Original: 0.987, Original-in-Input: 0.987 -> 59/60 points
+Final Score: 94/100 -> MATCH to original_02.jpg
+
+Processing: modified_02_compressed.jpg
+Rule 1 (Metadata): FIRED - METADATA_PARTIAL, Low size ratio 0.41, Dimension similarity 1.00 -> 13/30 points
+Rule 2 (Image Hash): FIRED - EXCELLENT_MATCH - Best: 100.0%, phash: 100.0% (distance: 0), ahash: 100.0% (distance: 0), dhash: 100.0% (distance: 0), whash: 100.0% (distance: 0) -> 10/10 points
+Rule 3 (Template): FIRED - EXCELLENT_MATCH, Input-in-Original: 0.999, Original-in-Input: 0.999 -> 59/60 points
+Final Score: 82/100 -> MATCH to original_02.jpg
+
+Processing: modified_02_crop_25pct.jpg
+Rule 1 (Metadata): NO MATCH - METADATA_DIFFERENT -> 0/30 points
+Rule 2 (Image Hash): FIRED - WEAK_MATCH - Best: 59.4%, phash: 43.8% (distance: 36), ahash: 50.0% (distance: 32), dhash: 59.4% (distance: 26), whash: 43.8% (distance: 36) -> 4/10 points
+Rule 3 (Template): FIRED - EXCELLENT_MATCH, Input-in-Original: 1.000, Scale 0.5: 0.462, Scale 0.75: 0.445, Scale 1.25: 0.392, Scale 1.5: 0.306 -> 59/60 points
+Final Score: 63/100 -> MATCH to original_02.jpg
+
+Processing: modified_02_crop_50pct.jpg
+Rule 1 (Metadata): FIRED - METADATA_PARTIAL, Dimension similarity 0.25 -> 1/30 points
+Rule 2 (Image Hash): FIRED - WEAK_MATCH - Best: 59.4%, phash: 40.6% (distance: 38), ahash: 48.4% (distance: 33), dhash: 59.4% (distance: 26), whash: 53.1% (distance: 30) -> 4/10 points
+Rule 3 (Template): FIRED - EXCELLENT_MATCH, Input-in-Original: 1.000, Scale 0.5: 0.344, Scale 0.75: 0.393, Scale 1.25: 0.389, Scale 1.5: 0.374 -> 59/60 points
+Final Score: 64/100 -> MATCH to original_02.jpg
+
+Processing: modified_02_crop_75pct.jpg
+Rule 1 (Metadata): FIRED - METADATA_PARTIAL, Low size ratio 0.58, Dimension similarity 0.56 -> 10/30 points
+Rule 2 (Image Hash): FIRED - MODERATE_MATCH - Best: 70.3%, phash: 65.6% (distance: 22), ahash: 56.2% (distance: 28), dhash: 70.3% (distance: 19), whash: 68.8% (distance: 20) -> 6/10 points
+Rule 3 (Template): FIRED - EXCELLENT_MATCH, Input-in-Original: 1.000, Scale 0.5: 0.440, Scale 0.75: 0.420, Scale 1.25: 0.303 -> 59/60 points
+Final Score: 75/100 -> MATCH to original_02.jpg
+
+Processing: modified_02_format_png.png
+Rule 1 (Metadata): FIRED - METADATA_PARTIAL, Dimension similarity 1.00 -> 5/30 points
+Rule 2 (Image Hash): FIRED - EXCELLENT_MATCH - Best: 100.0%, phash: 100.0% (distance: 0), ahash: 100.0% (distance: 0), dhash: 100.0% (distance: 0), whash: 100.0% (distance: 0) -> 10/10 points
+Rule 3 (Template): FIRED - EXCELLENT_MATCH, Input-in-Original: 1.000, Original-in-Input: 1.000 -> 60/60 points
+Final Score: 75/100 -> MATCH to original_02.jpg
+
+Processing: modified_03_bright_enhanced.jpg
+Rule 1 (Metadata): FIRED - METADATA_SIMILAR, Size ratio 0.95, Dimension similarity 1.00 -> 25/30 points
+Rule 2 (Image Hash): FIRED - EXCELLENT_MATCH - Best: 100.0%, phash: 100.0% (distance: 0), ahash: 100.0% (distance: 0), dhash: 100.0% (distance: 0), whash: 100.0% (distance: 0) -> 10/10 points
+Rule 3 (Template): FIRED - EXCELLENT_MATCH, Input-in-Original: 0.999, Original-in-Input: 0.999 -> 59/60 points
+Final Score: 94/100 -> MATCH to original_03.jpg
+
+Processing: modified_03_compressed.jpg
+Rule 1 (Metadata): FIRED - METADATA_PARTIAL, Dimension similarity 1.00 -> 5/30 points
+Rule 2 (Image Hash): FIRED - EXCELLENT_MATCH - Best: 100.0%, phash: 100.0% (distance: 0), ahash: 100.0% (distance: 0), dhash: 100.0% (distance: 0), whash: 100.0% (distance: 0) -> 10/10 points
+Rule 3 (Template): FIRED - EXCELLENT_MATCH, Input-in-Original: 0.996, Original-in-Input: 0.996 -> 59/60 points
+Final Score: 74/100 -> MATCH to original_03.jpg
+
+Processing: modified_03_crop_25pct.jpg
+Rule 1 (Metadata): NO MATCH - METADATA_DIFFERENT -> 0/30 points
+Rule 2 (Image Hash): FIRED - WEAK_MATCH - Best: 59.4%, phash: 53.1% (distance: 30), ahash: 59.4% (distance: 26), dhash: 54.7% (distance: 29), whash: 59.4% (distance: 26) -> 4/10 points
+Rule 3 (Template): FIRED - EXCELLENT_MATCH, Input-in-Original: 0.999, Scale 0.5: 0.753, Scale 0.75: 0.840, Scale 1.25: 0.792, Scale 1.5: 0.630 -> 59/60 points
+Final Score: 63/100 -> MATCH to original_03.jpg
+
+Processing: modified_03_crop_50pct.jpg
+Rule 1 (Metadata): FIRED - METADATA_PARTIAL, Low size ratio 0.30, Dimension similarity 0.25 -> 9/30 points
+Rule 2 (Image Hash): FIRED - WEAK_MATCH - Best: 59.4%, phash: 50.0% (distance: 32), ahash: 59.4% (distance: 26), dhash: 42.2% (distance: 37), whash: 56.2% (distance: 28) -> 4/10 points
+Rule 3 (Template): FIRED - EXCELLENT_MATCH, Input-in-Original: 0.999, Scale 0.5: 0.600, Scale 0.75: 0.656, Scale 1.25: 0.674, Scale 1.5: 0.560 -> 59/60 points
+Final Score: 72/100 -> MATCH to original_03.jpg
+
+Processing: modified_03_crop_75pct.jpg
+Rule 1 (Metadata): FIRED - METADATA_PARTIAL, Moderate size ratio 0.63, Dimension similarity 0.56 -> 17/30 points
+Rule 2 (Image Hash): FIRED - MODERATE_MATCH - Best: 75.0%, phash: 75.0% (distance: 16), ahash: 60.9% (distance: 25), dhash: 60.9% (distance: 25), whash: 59.4% (distance: 26) -> 6/10 points
+Rule 3 (Template): FIRED - EXCELLENT_MATCH, Input-in-Original: 0.999, Scale 0.5: 0.484, Scale 0.75: 0.585, Scale 1.25: 0.516 -> 59/60 points
+Final Score: 82/100 -> MATCH to original_03.jpg
+
+Processing: modified_03_format_png.png
+Rule 1 (Metadata): FIRED - METADATA_PARTIAL, Dimension similarity 1.00 -> 5/30 points
+Rule 2 (Image Hash): FIRED - EXCELLENT_MATCH - Best: 100.0%, phash: 100.0% (distance: 0), ahash: 100.0% (distance: 0), dhash: 100.0% (distance: 0), whash: 100.0% (distance: 0) -> 10/10 points
+Rule 3 (Template): FIRED - EXCELLENT_MATCH, Input-in-Original: 1.000, Original-in-Input: 1.000 -> 59/60 points
+Final Score: 74/100 -> MATCH to original_03.jpg
+
+Processing: modified_04_bright_enhanced.jpg
+Rule 1 (Metadata): FIRED - METADATA_SIMILAR, Size ratio 0.96, Dimension similarity 1.00 -> 25/30 points
+Rule 2 (Image Hash): FIRED - EXCELLENT_MATCH - Best: 100.0%, phash: 96.9% (distance: 2), ahash: 100.0% (distance: 0), dhash: 98.4% (distance: 1), whash: 100.0% (distance: 0) -> 10/10 points
+Rule 3 (Template): FIRED - EXCELLENT_MATCH, Input-in-Original: 0.996, Original-in-Input: 0.996 -> 59/60 points
+Final Score: 94/100 -> MATCH to original_04.jpg
+
+Processing: modified_04_compressed.jpg
+Rule 1 (Metadata): FIRED - METADATA_PARTIAL, Low size ratio 0.39, Dimension similarity 1.00 -> 13/30 points
+Rule 2 (Image Hash): FIRED - EXCELLENT_MATCH - Best: 100.0%, phash: 96.9% (distance: 2), ahash: 100.0% (distance: 0), dhash: 96.9% (distance: 2), whash: 100.0% (distance: 0) -> 10/10 points
+Rule 3 (Template): FIRED - EXCELLENT_MATCH, Input-in-Original: 0.998, Original-in-Input: 0.998 -> 59/60 points
+Final Score: 82/100 -> MATCH to original_04.jpg
+
+Processing: modified_04_crop_25pct.jpg
+Rule 1 (Metadata): NO MATCH - METADATA_DIFFERENT -> 0/30 points
+Rule 2 (Image Hash): FIRED - WEAK_MATCH - Best: 50.0%, phash: 50.0% (distance: 32), ahash: 26.6% (distance: 47), dhash: 37.5% (distance: 40), whash: 25.0% (distance: 48) -> 4/10 points
+Rule 3 (Template): FIRED - EXCELLENT_MATCH, Input-in-Original: 1.000, Scale 0.5: 0.403, Scale 0.75: 0.327, Scale 1.25: 0.277, Scale 1.5: 0.259 -> 59/60 points
+Final Score: 63/100 -> MATCH to original_04.jpg
+
+Processing: modified_04_crop_50pct.jpg
+Rule 1 (Metadata): FIRED - METADATA_PARTIAL, Low size ratio 0.33, Dimension similarity 0.25 -> 9/30 points
+Rule 2 (Image Hash): FIRED - WEAK_MATCH - Best: 56.2%, phash: 56.2% (distance: 28), ahash: 48.4% (distance: 33), dhash: 51.6% (distance: 31), whash: 40.6% (distance: 38) -> 4/10 points
+Rule 3 (Template): FIRED - EXCELLENT_MATCH, Input-in-Original: 1.000, Scale 0.5: 0.314, Scale 0.75: 0.187, Scale 1.25: 0.141, Scale 1.5: 0.162 -> 59/60 points
+Final Score: 72/100 -> MATCH to original_04.jpg
+
+Processing: modified_04_crop_75pct.jpg
+Rule 1 (Metadata): FIRED - METADATA_PARTIAL, Moderate size ratio 0.72, Dimension similarity 0.56 -> 17/30 points
+Rule 2 (Image Hash): FIRED - MODERATE_MATCH - Best: 76.6%, phash: 68.8% (distance: 20), ahash: 76.6% (distance: 15), dhash: 70.3% (distance: 19), whash: 71.9% (distance: 18) -> 6/10 points
+Rule 3 (Template): FIRED - EXCELLENT_MATCH, Input-in-Original: 1.000, Scale 0.5: 0.320, Scale 0.75: 0.205, Scale 1.25: 0.172 -> 59/60 points
+Final Score: 82/100 -> MATCH to original_04.jpg
+
+Processing: modified_04_format_png.png
+Rule 1 (Metadata): FIRED - METADATA_PARTIAL, Dimension similarity 1.00 -> 5/30 points
+Rule 2 (Image Hash): FIRED - EXCELLENT_MATCH - Best: 100.0%, phash: 100.0% (distance: 0), ahash: 100.0% (distance: 0), dhash: 100.0% (distance: 0), whash: 100.0% (distance: 0) -> 10/10 points
+Rule 3 (Template): FIRED - EXCELLENT_MATCH, Input-in-Original: 1.000, Original-in-Input: 1.000 -> 60/60 points
+Final Score: 75/100 -> MATCH to original_04.jpg
+
+Processing: modified_05_bright_enhanced.jpg
+Rule 1 (Metadata): FIRED - METADATA_SIMILAR, Size ratio 0.95, Dimension similarity 1.00 -> 25/30 points
+Rule 2 (Image Hash): FIRED - EXCELLENT_MATCH - Best: 100.0%, phash: 96.9% (distance: 2), ahash: 93.8% (distance: 4), dhash: 98.4% (distance: 1), whash: 100.0% (distance: 0) -> 10/10 points
+Rule 3 (Template): FIRED - EXCELLENT_MATCH, Input-in-Original: 0.996, Original-in-Input: 0.996 -> 59/60 points
+Final Score: 94/100 -> MATCH to original_05.jpg
+
+Processing: modified_05_compressed.jpg
+Rule 1 (Metadata): FIRED - METADATA_PARTIAL, Low size ratio 0.34, Dimension similarity 1.00 -> 13/30 points
+Rule 2 (Image Hash): FIRED - EXCELLENT_MATCH - Best: 100.0%, phash: 100.0% (distance: 0), ahash: 100.0% (distance: 0), dhash: 100.0% (distance: 0), whash: 100.0% (distance: 0) -> 10/10 points
+Rule 3 (Template): FIRED - EXCELLENT_MATCH, Input-in-Original: 0.997, Original-in-Input: 0.997 -> 59/60 points
+Final Score: 82/100 -> MATCH to original_05.jpg
+
+Processing: modified_05_crop_25pct.jpg
+Rule 1 (Metadata): NO MATCH - METADATA_DIFFERENT -> 0/30 points
+Rule 2 (Image Hash): FIRED - WEAK_MATCH - Best: 50.0%, phash: 50.0% (distance: 32), ahash: 42.2% (distance: 37), dhash: 50.0% (distance: 32), whash: 40.6% (distance: 38) -> 4/10 points
+Rule 3 (Template): FIRED - EXCELLENT_MATCH, Input-in-Original: 0.999, Scale 0.5: 0.473, Scale 0.75: 0.442, Scale 1.25: 0.391, Scale 1.5: 0.361 -> 59/60 points
+Final Score: 63/100 -> MATCH to original_05.jpg
+
+Processing: modified_05_crop_50pct.jpg
+Rule 1 (Metadata): FIRED - METADATA_PARTIAL, Low size ratio 0.32, Dimension similarity 0.25 -> 9/30 points
+Rule 2 (Image Hash): FIRED - WEAK_MATCH - Best: 54.7%, phash: 43.8% (distance: 36), ahash: 48.4% (distance: 33), dhash: 54.7% (distance: 29), whash: 43.8% (distance: 36) -> 4/10 points
+Rule 3 (Template): FIRED - EXCELLENT_MATCH, Input-in-Original: 0.999, Scale 0.5: 0.281, Scale 0.75: 0.291, Scale 1.25: 0.252, Scale 1.5: 0.258 -> 59/60 points
+Final Score: 72/100 -> MATCH to original_05.jpg
+
+Processing: modified_05_crop_75pct.jpg
+Rule 1 (Metadata): FIRED - METADATA_PARTIAL, Moderate size ratio 0.65, Dimension similarity 0.56 -> 17/30 points
+Rule 2 (Image Hash): FIRED - MODERATE_MATCH - Best: 73.4%, phash: 50.0% (distance: 32), ahash: 73.4% (distance: 17), dhash: 60.9% (distance: 25), whash: 68.8% (distance: 20) -> 6/10 points
+Rule 3 (Template): FIRED - EXCELLENT_MATCH, Input-in-Original: 0.999, Scale 0.5: 0.294, Scale 0.75: 0.320, Scale 1.25: 0.244 -> 59/60 points
+Final Score: 82/100 -> MATCH to original_05.jpg
+
+Processing: modified_05_format_png.png
+Rule 1 (Metadata): FIRED - METADATA_PARTIAL, Dimension similarity 1.00 -> 5/30 points
+Rule 2 (Image Hash): FIRED - EXCELLENT_MATCH - Best: 100.0%, phash: 100.0% (distance: 0), ahash: 100.0% (distance: 0), dhash: 100.0% (distance: 0), whash: 100.0% (distance: 0) -> 10/10 points
+Rule 3 (Template): FIRED - EXCELLENT_MATCH, Input-in-Original: 1.000, Original-in-Input: 1.000 -> 59/60 points
+Final Score: 74/100 -> MATCH to original_05.jpg
+
+Processing: modified_06_bright_enhanced.jpg
+Rule 1 (Metadata): FIRED - METADATA_SIMILAR, Size ratio 0.95, Dimension similarity 1.00 -> 25/30 points
+Rule 2 (Image Hash): FIRED - EXCELLENT_MATCH - Best: 100.0%, phash: 100.0% (distance: 0), ahash: 100.0% (distance: 0), dhash: 100.0% (distance: 0), whash: 100.0% (distance: 0) -> 10/10 points
+Rule 3 (Template): FIRED - EXCELLENT_MATCH, Input-in-Original: 0.999, Original-in-Input: 0.999 -> 59/60 points
+Final Score: 94/100 -> MATCH to original_06.jpg
+
+Processing: modified_06_compressed.jpg
+Rule 1 (Metadata): FIRED - METADATA_PARTIAL, Low size ratio 0.36, Dimension similarity 1.00 -> 13/30 points
+Rule 2 (Image Hash): FIRED - EXCELLENT_MATCH - Best: 100.0%, phash: 100.0% (distance: 0), ahash: 100.0% (distance: 0), dhash: 100.0% (distance: 0), whash: 100.0% (distance: 0) -> 10/10 points
+Rule 3 (Template): FIRED - EXCELLENT_MATCH, Input-in-Original: 0.996, Original-in-Input: 0.996 -> 59/60 points
+Final Score: 82/100 -> MATCH to original_06.jpg
+
+Processing: modified_06_crop_25pct.jpg
+Rule 1 (Metadata): NO MATCH - METADATA_DIFFERENT -> 0/30 points
+Rule 2 (Image Hash): FIRED - WEAK_MATCH - Best: 65.6%, phash: 56.2% (distance: 28), ahash: 65.6% (distance: 22), dhash: 45.3% (distance: 35), whash: 62.5% (distance: 24) -> 4/10 points
+Rule 3 (Template): FIRED - EXCELLENT_MATCH, Input-in-Original: 0.997, Scale 0.5: 0.428, Scale 0.75: 0.463, Scale 1.25: 0.372, Scale 1.5: 0.321 -> 59/60 points
+Final Score: 63/100 -> MATCH to original_06.jpg
+
+Processing: modified_06_crop_50pct.jpg
+Rule 1 (Metadata): FIRED - METADATA_PARTIAL, Dimension similarity 0.25 -> 1/30 points
+Rule 2 (Image Hash): FIRED - MODERATE_MATCH - Best: 75.0%, phash: 46.9% (distance: 34), ahash: 67.2% (distance: 21), dhash: 51.6% (distance: 31), whash: 75.0% (distance: 16) -> 6/10 points
+Rule 3 (Template): FIRED - EXCELLENT_MATCH, Input-in-Original: 0.999, Scale 0.5: 0.443, Scale 0.75: 0.394, Scale 1.25: 0.349, Scale 1.5: 0.268 -> 59/60 points
+Final Score: 66/100 -> MATCH to original_06.jpg
+
+Processing: modified_06_crop_75pct.jpg
+Rule 1 (Metadata): FIRED - METADATA_PARTIAL, Moderate size ratio 0.66, Dimension similarity 0.56 -> 17/30 points
+Rule 2 (Image Hash): FIRED - GOOD_MATCH - Best: 87.5%, phash: 53.1% (distance: 30), ahash: 85.9% (distance: 9), dhash: 56.2% (distance: 28), whash: 87.5% (distance: 8) -> 8/10 points
+Rule 3 (Template): FIRED - EXCELLENT_MATCH, Input-in-Original: 0.999, Scale 0.5: 0.358, Scale 0.75: 0.337, Scale 1.25: 0.348 -> 59/60 points
+Final Score: 84/100 -> MATCH to original_06.jpg
+
+Processing: modified_06_format_png.png
+Rule 1 (Metadata): FIRED - METADATA_PARTIAL, Dimension similarity 1.00 -> 5/30 points
+Rule 2 (Image Hash): FIRED - EXCELLENT_MATCH - Best: 100.0%, phash: 100.0% (distance: 0), ahash: 100.0% (distance: 0), dhash: 100.0% (distance: 0), whash: 100.0% (distance: 0) -> 10/10 points
+Rule 3 (Template): FIRED - EXCELLENT_MATCH, Input-in-Original: 1.000, Original-in-Input: 1.000 -> 60/60 points
+Final Score: 75/100 -> MATCH to original_06.jpg
+
+Processing: modified_07_bright_enhanced.jpg
+Rule 1 (Metadata): FIRED - METADATA_SIMILAR, Size ratio 0.98, Dimension similarity 1.00 -> 25/30 points
+Rule 2 (Image Hash): FIRED - EXCELLENT_MATCH - Best: 100.0%, phash: 100.0% (distance: 0), ahash: 90.6% (distance: 6), dhash: 92.2% (distance: 5), whash: 100.0% (distance: 0) -> 10/10 points
+Rule 3 (Template): FIRED - EXCELLENT_MATCH, Input-in-Original: 0.991, Original-in-Input: 0.991 -> 59/60 points
+Final Score: 94/100 -> MATCH to original_07.jpg
+
+Processing: modified_07_compressed.jpg
+Rule 1 (Metadata): FIRED - METADATA_PARTIAL, Low size ratio 0.36, Dimension similarity 1.00 -> 13/30 points
+Rule 2 (Image Hash): FIRED - EXCELLENT_MATCH - Best: 100.0%, phash: 100.0% (distance: 0), ahash: 100.0% (distance: 0), dhash: 100.0% (distance: 0), whash: 100.0% (distance: 0) -> 10/10 points
+Rule 3 (Template): FIRED - EXCELLENT_MATCH, Input-in-Original: 0.999, Original-in-Input: 0.999 -> 59/60 points
+Final Score: 82/100 -> MATCH to original_07.jpg
+
+Processing: modified_07_crop_25pct.jpg
+Rule 1 (Metadata): NO MATCH - METADATA_DIFFERENT -> 0/30 points
+Rule 2 (Image Hash): FIRED - MODERATE_MATCH - Best: 71.9%, phash: 56.2% (distance: 28), ahash: 59.4% (distance: 26), dhash: 51.6% (distance: 31), whash: 71.9% (distance: 18) -> 6/10 points
+Rule 3 (Template): FIRED - EXCELLENT_MATCH, Input-in-Original: 0.998, Scale 0.5: 0.484, Scale 0.75: 0.534, Scale 1.25: 0.535, Scale 1.5: 0.459 -> 59/60 points
+Final Score: 65/100 -> MATCH to original_07.jpg
+
+Processing: modified_07_crop_50pct.jpg
+Rule 1 (Metadata): FIRED - METADATA_PARTIAL, Low size ratio 0.33, Dimension similarity 0.25 -> 9/30 points
+Rule 2 (Image Hash): FIRED - WEAK_MATCH - Best: 65.6%, phash: 53.1% (distance: 30), ahash: 56.2% (distance: 28), dhash: 65.6% (distance: 22), whash: 65.6% (distance: 22) -> 4/10 points
+Rule 3 (Template): FIRED - EXCELLENT_MATCH, Input-in-Original: 0.999, Scale 0.5: 0.432, Scale 0.75: 0.567, Scale 1.25: 0.580, Scale 1.5: 0.461 -> 59/60 points
+Final Score: 72/100 -> MATCH to original_07.jpg
+
+Processing: modified_07_crop_75pct.jpg
+Rule 1 (Metadata): FIRED - METADATA_PARTIAL, Moderate size ratio 0.67, Dimension similarity 0.56 -> 17/30 points
+Rule 2 (Image Hash): FIRED - MODERATE_MATCH - Best: 75.0%, phash: 50.0% (distance: 32), ahash: 56.2% (distance: 28), dhash: 56.2% (distance: 28), whash: 75.0% (distance: 16) -> 6/10 points
+Rule 3 (Template): FIRED - EXCELLENT_MATCH, Input-in-Original: 0.999, Scale 0.5: 0.465, Scale 0.75: 0.591, Scale 1.25: 0.489 -> 59/60 points
+Final Score: 82/100 -> MATCH to original_07.jpg
+
+Processing: modified_07_format_png.png
+Rule 1 (Metadata): FIRED - METADATA_PARTIAL, Dimension similarity 1.00 -> 5/30 points
+Rule 2 (Image Hash): FIRED - EXCELLENT_MATCH - Best: 100.0%, phash: 100.0% (distance: 0), ahash: 100.0% (distance: 0), dhash: 100.0% (distance: 0), whash: 100.0% (distance: 0) -> 10/10 points
+Rule 3 (Template): FIRED - EXCELLENT_MATCH, Input-in-Original: 1.000, Original-in-Input: 1.000 -> 59/60 points
+Final Score: 74/100 -> MATCH to original_07.jpg
+
+Processing: modified_08_bright_enhanced.jpg
+Rule 1 (Metadata): FIRED - METADATA_SIMILAR, Size ratio 0.98, Dimension similarity 1.00 -> 25/30 points
+Rule 2 (Image Hash): FIRED - EXCELLENT_MATCH - Best: 100.0%, phash: 90.6% (distance: 6), ahash: 92.2% (distance: 5), dhash: 96.9% (distance: 2), whash: 100.0% (distance: 0) -> 10/10 points
+Rule 3 (Template): FIRED - EXCELLENT_MATCH, Input-in-Original: 0.993, Original-in-Input: 0.993 -> 59/60 points
+Final Score: 94/100 -> MATCH to original_08.jpg
+
+Processing: modified_08_compressed.jpg
+Rule 1 (Metadata): FIRED - METADATA_PARTIAL, Low size ratio 0.41, Dimension similarity 1.00 -> 13/30 points
+Rule 2 (Image Hash): FIRED - EXCELLENT_MATCH - Best: 100.0%, phash: 96.9% (distance: 2), ahash: 100.0% (distance: 0), dhash: 100.0% (distance: 0), whash: 100.0% (distance: 0) -> 10/10 points
+Rule 3 (Template): FIRED - EXCELLENT_MATCH, Input-in-Original: 0.998, Original-in-Input: 0.998 -> 59/60 points
+Final Score: 82/100 -> MATCH to original_08.jpg
+
+Processing: modified_08_crop_25pct.jpg
+Rule 1 (Metadata): NO MATCH - METADATA_DIFFERENT -> 0/30 points
+Rule 2 (Image Hash): FIRED - WEAK_MATCH - Best: 57.8%, phash: 34.4% (distance: 42), ahash: 29.7% (distance: 45), dhash: 57.8% (distance: 27), whash: 31.2% (distance: 44) -> 4/10 points
+Rule 3 (Template): FIRED - EXCELLENT_MATCH, Input-in-Original: 0.999, Scale 0.5: 0.602, Scale 0.75: 0.562, Scale 1.25: 0.478, Scale 1.5: 0.387 -> 59/60 points
+Final Score: 63/100 -> MATCH to original_08.jpg
+
+Processing: modified_08_crop_50pct.jpg
+Rule 1 (Metadata): FIRED - METADATA_PARTIAL, Low size ratio 0.38, Dimension similarity 0.25 -> 9/30 points
+Rule 2 (Image Hash): FIRED - WEAK_MATCH - Best: 50.0%, phash: 50.0% (distance: 32), ahash: 45.3% (distance: 35), dhash: 50.0% (distance: 32), whash: 50.0% (distance: 32) -> 4/10 points
+Rule 3 (Template): FIRED - EXCELLENT_MATCH, Input-in-Original: 0.999, Scale 0.5: 0.310, Scale 0.75: 0.365, Scale 1.25: 0.310, Scale 1.5: 0.163 -> 59/60 points
+Final Score: 72/100 -> MATCH to original_08.jpg
+
+Processing: modified_08_crop_75pct.jpg
+Rule 1 (Metadata): FIRED - METADATA_PARTIAL, Moderate size ratio 0.75, Dimension similarity 0.56 -> 17/30 points
+Rule 2 (Image Hash): FIRED - MODERATE_MATCH - Best: 79.7%, phash: 53.1% (distance: 30), ahash: 79.7% (distance: 13), dhash: 53.1% (distance: 30), whash: 71.9% (distance: 18) -> 6/10 points
+Rule 3 (Template): FIRED - EXCELLENT_MATCH, Input-in-Original: 0.999, Scale 0.5: 0.346, Scale 0.75: 0.256, Scale 1.25: 0.347 -> 59/60 points
+Final Score: 82/100 -> MATCH to original_08.jpg
+
+Processing: modified_08_format_png.png
+Rule 1 (Metadata): FIRED - METADATA_PARTIAL, Dimension similarity 1.00 -> 5/30 points
+Rule 2 (Image Hash): FIRED - EXCELLENT_MATCH - Best: 100.0%, phash: 100.0% (distance: 0), ahash: 100.0% (distance: 0), dhash: 100.0% (distance: 0), whash: 100.0% (distance: 0) -> 10/10 points
+Rule 3 (Template): FIRED - EXCELLENT_MATCH, Input-in-Original: 1.000, Original-in-Input: 1.000 -> 60/60 points
+Final Score: 75/100 -> MATCH to original_08.jpg
+
+Processing: modified_09_bright_enhanced.jpg
+Rule 1 (Metadata): FIRED - METADATA_SIMILAR, Size ratio 0.96, Dimension similarity 1.00 -> 25/30 points
+Rule 2 (Image Hash): FIRED - EXCELLENT_MATCH - Best: 96.9%, phash: 90.6% (distance: 6), ahash: 95.3% (distance: 3), dhash: 96.9% (distance: 2), whash: 96.9% (distance: 2) -> 10/10 points
+Rule 3 (Template): FIRED - EXCELLENT_MATCH, Input-in-Original: 0.994, Original-in-Input: 0.994 -> 59/60 points
+Final Score: 94/100 -> MATCH to original_09.jpg
+
+Processing: modified_09_compressed.jpg
+Rule 1 (Metadata): FIRED - METADATA_PARTIAL, Dimension similarity 1.00 -> 5/30 points
+Rule 2 (Image Hash): FIRED - EXCELLENT_MATCH - Best: 100.0%, phash: 100.0% (distance: 0), ahash: 100.0% (distance: 0), dhash: 98.4% (distance: 1), whash: 100.0% (distance: 0) -> 10/10 points
+Rule 3 (Template): FIRED - EXCELLENT_MATCH, Input-in-Original: 0.999, Original-in-Input: 0.999 -> 59/60 points
+Final Score: 74/100 -> MATCH to original_09.jpg
+
+Processing: modified_09_crop_25pct.jpg
+Rule 1 (Metadata): NO MATCH - METADATA_DIFFERENT -> 0/30 points
+Rule 2 (Image Hash): FIRED - GOOD_MATCH - Best: 85.9%, phash: 53.1% (distance: 30), ahash: 85.9% (distance: 9), dhash: 70.3% (distance: 19), whash: 78.1% (distance: 14) -> 8/10 points
+Rule 3 (Template): FIRED - EXCELLENT_MATCH, Input-in-Original: 0.997, Scale 0.5: 0.715, Scale 0.75: 0.870, Scale 1.25: 0.832, Scale 1.5: 0.607 -> 59/60 points
+Final Score: 67/100 -> MATCH to original_09.jpg
+
+Processing: modified_09_crop_50pct.jpg
+Rule 1 (Metadata): FIRED - METADATA_PARTIAL, Low size ratio 0.30, Dimension similarity 0.25 -> 9/30 points
+Rule 2 (Image Hash): FIRED - GOOD_MATCH - Best: 87.5%, phash: 59.4% (distance: 26), ahash: 87.5% (distance: 8), dhash: 70.3% (distance: 19), whash: 78.1% (distance: 14) -> 8/10 points
+Rule 3 (Template): FIRED - EXCELLENT_MATCH, Input-in-Original: 0.999, Scale 0.5: 0.583, Scale 0.75: 0.680, Scale 1.25: 0.581, Scale 1.5: 0.609 -> 59/60 points
+Final Score: 76/100 -> MATCH to original_09.jpg
+
+Processing: modified_09_crop_75pct.jpg
+Rule 1 (Metadata): FIRED - METADATA_PARTIAL, Moderate size ratio 0.70, Dimension similarity 0.56 -> 17/30 points
+Rule 2 (Image Hash): FIRED - EXCELLENT_MATCH - Best: 95.3%, phash: 62.5% (distance: 24), ahash: 95.3% (distance: 3), dhash: 73.4% (distance: 17), whash: 93.8% (distance: 4) -> 10/10 points
+Rule 3 (Template): FIRED - EXCELLENT_MATCH, Input-in-Original: 0.999, Scale 0.5: 0.513, Scale 0.75: 0.670, Scale 1.25: 0.666 -> 59/60 points
+Final Score: 86/100 -> MATCH to original_09.jpg
+
+Processing: modified_09_format_png.png
+Rule 1 (Metadata): FIRED - METADATA_PARTIAL, Dimension similarity 1.00 -> 5/30 points
+Rule 2 (Image Hash): FIRED - EXCELLENT_MATCH - Best: 100.0%, phash: 100.0% (distance: 0), ahash: 100.0% (distance: 0), dhash: 100.0% (distance: 0), whash: 100.0% (distance: 0) -> 10/10 points
+Rule 3 (Template): FIRED - EXCELLENT_MATCH, Input-in-Original: 1.000, Original-in-Input: 1.000 -> 60/60 points
+Final Score: 75/100 -> MATCH to original_09.jpg
+
+============================================================
+Processing folder: random
+============================================================
+
+Processing: random_noise_00.jpg
+Rule 1 (Metadata): NO MATCH - METADATA_DIFFERENT -> 0/30 points
+Rule 2 (Image Hash): FIRED - WEAK_MATCH - Best: 59.4%, phash: 46.9% (distance: 34), ahash: 51.6% (distance: 31), dhash: 51.6% (distance: 31), whash: 59.4% (distance: 26) -> 4/10 points
+Rule 3 (Template): FIRED - NO_MATCH, Input-in-Original: 0.018, Scale 0.5: 0.037, Scale 0.75: 0.028, Scale 1.25: 0.027, Scale 1.5: 0.027 -> 2/60 points
+Final Score: 6/100 -> REJECTED
+
+Processing: random_noise_01.jpg
+Rule 1 (Metadata): NO MATCH - METADATA_DIFFERENT -> 0/30 points
+Rule 2 (Image Hash): FIRED - WEAK_MATCH - Best: 53.1%, phash: 53.1% (distance: 30), ahash: 48.4% (distance: 33), dhash: 48.4% (distance: 33), whash: 50.0% (distance: 32) -> 4/10 points
+Rule 3 (Template): FIRED - NO_MATCH, Input-in-Original: 0.018, Scale 0.5: 0.038, Scale 0.75: 0.027, Scale 1.25: 0.025, Scale 1.5: 0.024 -> 2/60 points
+Final Score: 6/100 -> REJECTED
+
+Processing: random_noise_02.jpg
+Rule 1 (Metadata): NO MATCH - METADATA_DIFFERENT -> 0/30 points
+Rule 2 (Image Hash): FIRED - WEAK_MATCH - Best: 51.6%, phash: 50.0% (distance: 32), ahash: 51.6% (distance: 31), dhash: 51.6% (distance: 31), whash: 43.8% (distance: 36) -> 4/10 points
+Rule 3 (Template): FIRED - NO_MATCH, Input-in-Original: 0.018, Scale 0.5: 0.038, Scale 0.75: 0.030, Scale 1.25: 0.026, Scale 1.5: 0.027 -> 2/60 points
+Final Score: 6/100 -> REJECTED
+
+Processing: random_noise_03.jpg
+Rule 1 (Metadata): NO MATCH - METADATA_DIFFERENT -> 0/30 points
+Rule 2 (Image Hash): FIRED - WEAK_MATCH - Best: 53.1%, phash: 53.1% (distance: 30), ahash: 50.0% (distance: 32), dhash: 45.3% (distance: 35), whash: 43.8% (distance: 36) -> 4/10 points
+Rule 3 (Template): FIRED - NO_MATCH, Input-in-Original: 0.017, Scale 0.5: 0.038, Scale 0.75: 0.027, Scale 1.25: 0.028, Scale 1.5: 0.025 -> 2/60 points
+Final Score: 6/100 -> REJECTED
+
+Processing: random_noise_04.jpg
+Rule 1 (Metadata): NO MATCH - METADATA_DIFFERENT -> 0/30 points
+Rule 2 (Image Hash): FIRED - WEAK_MATCH - Best: 53.1%, phash: 53.1% (distance: 30), ahash: 42.2% (distance: 37), dhash: 43.8% (distance: 36), whash: 43.8% (distance: 36) -> 4/10 points
+Rule 3 (Template): FIRED - NO_MATCH, Input-in-Original: 0.018, Scale 0.5: 0.039, Scale 0.75: 0.027, Scale 1.25: 0.024, Scale 1.5: 0.027 -> 2/60 points
+Final Score: 6/100 -> REJECTED
+
+============================================================
+SUMMARY STATISTICS
+============================================================
+Total images processed: 65
+Matches found: 60
+Correct rejections: 5
+Overall match rate: 92.3%
+
+[INFO] Testing complete!
+(myenv) PS C:\Users\Jeet Kavaiya\OneDrive\Desktop\Fall_25\Basics of AI\Expert_System_Project>
