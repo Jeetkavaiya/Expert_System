@@ -323,14 +323,4 @@ ModuleNotFoundError: No module named 'imagehash'
 
 ---
 
-## Author & Course Information
-
-- **Course**: EAS 510 - Basics of AI  
-- **Assignment**: Assignment 1 - Digital Forensics Apprentice
-- **Instructor**: Justin Del Vecchio
-- **Implementation**: Expert System with Image Analysis
-- **Language**: Python 3.x
-
----
-
 *This expert system demonstrates classical AI principles applied to digital forensics, providing transparent and reliable decision-making capabilities suitable for forensic applications.*
